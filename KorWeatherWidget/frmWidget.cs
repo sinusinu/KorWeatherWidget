@@ -25,6 +25,8 @@ namespace WeatherWidget {
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
+        const int WS_EX_TOOLWINDOW = 0x80;
+
         [DllImport("user32.dll")]
         static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
         [DllImport("user32.dll")]
@@ -54,6 +56,14 @@ namespace WeatherWidget {
 
         public frmWidget() {
             InitializeComponent();
+        }
+
+        protected override CreateParams CreateParams {
+            get {
+                var cp = base.CreateParams;
+                cp.ExStyle |= WS_EX_TOOLWINDOW;
+                return cp;
+            }
         }
 
         private void frmWidget_Load(object sender, EventArgs e) {
