@@ -7,6 +7,8 @@
     <Authors>sinu</Authors>
     <Company>sinu</Company>
     <Copyright>2021 sinu</Copyright>
+    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
