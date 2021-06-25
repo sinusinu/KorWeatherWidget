@@ -17,15 +17,15 @@ using System.Xml;
 
 namespace WeatherWidget {
     public partial class frmWidget : Form {
-        static readonly IntPtr HWND_BOTTOM = new IntPtr(1);
-        const UInt32 SWP_NOSIZE = 0x0001;
-        const UInt32 SWP_NOMOVE = 0x0002;
-        const UInt32 SWP_NOACTIVATE = 0x0010;
+        private readonly IntPtr HWND_BOTTOM = new IntPtr(1);
+        private const int SWP_NOSIZE = 0x0001;
+        private const int SWP_NOMOVE = 0x0002;
+        private const int SWP_NOACTIVATE = 0x0010;
 
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
+        private const int WM_NCLBUTTONDOWN = 0xA1;
+        private const int HT_CAPTION = 0x2;
 
-        const int WS_EX_TOOLWINDOW = 0x80;
+        private const int WS_EX_TOOLWINDOW = 0x80;
 
         [DllImport("user32.dll")]
         static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
