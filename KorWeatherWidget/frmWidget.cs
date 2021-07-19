@@ -216,5 +216,10 @@ namespace WeatherWidget {
                 WindowState = FormWindowState.Normal;
             }
         }
+
+        private void tsmLocationDisplay_Click(object sender, EventArgs e) {
+            lblLocation.Visible = !lblLocation.Visible;
+            tsmLocationDisplay.Checked = lblLocation.Visible;
+        }
     }
 }

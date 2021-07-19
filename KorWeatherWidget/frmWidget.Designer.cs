@@ -35,6 +35,7 @@ namespace WeatherWidget {
             this.ttLastUpdateTimeTeller = new System.Windows.Forms.ToolTip(this.components);
             this.csmContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmCopyright = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmLocationDisplay = new System.Windows.Forms.ToolStripMenuItem();
             this.tspSep = new System.Windows.Forms.ToolStripSeparator();
             this.tsmExit = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pbxIcon)).BeginInit();
@@ -111,10 +112,11 @@ namespace WeatherWidget {
             // 
             this.csmContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmCopyright,
+            this.tsmLocationDisplay,
             this.tspSep,
             this.tsmExit});
             this.csmContextMenu.Name = "csmContextMenu";
-            this.csmContextMenu.Size = new System.Drawing.Size(144, 54);
+            this.csmContextMenu.Size = new System.Drawing.Size(144, 76);
             // 
             // tsmCopyright
             // 
@@ -122,6 +124,15 @@ namespace WeatherWidget {
             this.tsmCopyright.Name = "tsmCopyright";
             this.tsmCopyright.Size = new System.Drawing.Size(143, 22);
             this.tsmCopyright.Text = "© 2021 sinu";
+            // 
+            // tsmLocationDisplay
+            // 
+            this.tsmLocationDisplay.Checked = true;
+            this.tsmLocationDisplay.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.tsmLocationDisplay.Name = "tsmLocationDisplay";
+            this.tsmLocationDisplay.Size = new System.Drawing.Size(143, 22);
+            this.tsmLocationDisplay.Text = "위치 표시(&D)";
+            this.tsmLocationDisplay.Click += new System.EventHandler(this.tsmLocationDisplay_Click);
             // 
             // tspSep
             // 
@@ -176,6 +187,7 @@ namespace WeatherWidget {
         private System.Windows.Forms.ToolStripMenuItem tsmCopyright;
         private System.Windows.Forms.ToolStripSeparator tspSep;
         private System.Windows.Forms.ToolStripMenuItem tsmExit;
+        private System.Windows.Forms.ToolStripMenuItem tsmLocationDisplay;
     }
 }
 
