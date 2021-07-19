@@ -19,11 +19,13 @@
 
 1. 올바른 글꼴 표시를 위해 [나눔바른고딕](https://hangeul.naver.com/font) 글꼴을 설치합니다.
 2. [Releases](https://github.com/sinusinu/KorWeatherWidget/releases)에서 최신 릴리즈를 다운로드하여 적당한 위치에 압축 해제합니다.
-3. 동네를 별도로 지정하지 않으면 `서울특별시 중구 신당동`의 날씨가 표시됩니다. 동네를 지정하려면 먼저 [기상청 RSS 서비스](http://www.weather.go.kr/weather/lifenindustry/sevice_rss.jsp) 페이지에 접속해 동네예보에서 원하는 동네를 시/구/동 순서대로 검색한 뒤 `RSS`를 눌러 다음과 같은 형식의 URL을 취득합니다.<br/>
+3. `KorWeatherWidget.exe`를 실행하여 바탕화면에 위젯이 생긴 것을 확인합니다.
+4. 앱을 종료하려면 위젯 위에서 오른쪽 클릭 후 `닫기`를 클릭합니다.
+
+동네를 별도로 지정하지 않으면 `서울특별시 중구 신당동`의 날씨가 표시됩니다. 동네를 지정하려면:
+1. 먼저 [기상청 RSS 서비스](http://www.weather.go.kr/weather/lifenindustry/sevice_rss.jsp) 페이지에 접속해 동네예보에서 원하는 동네를 시/구/동 순서대로 검색한 뒤 `RSS`를 눌러 다음과 같은 형식의 URL을 취득합니다.<br/>
 (예시 URL: `http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1114061500`)
-4. 이어서 앱을 압축 해제한 폴더에 `zone.txt` 파일을 만들고, 해당 파일에 위 URL 맨 끝의 `zone` 값 (예: `1114061500`)을 입력한 뒤 저장합니다. 내용에 줄바꿈이나 공백이 존재해서는 안 됩니다.
-5. `KorWeatherWidget.exe`를 실행하여 바탕화면에 위젯이 생긴 것을 확인합니다.
-6. 앱을 종료하려면 위젯 위에서 오른쪽 클릭 후 `닫기`를 클릭합니다.
+2. 이어서 앱을 압축 해제한 폴더에 `zone.txt` 파일을 만들고, 해당 파일에 위 URL 맨 끝의 `zone` 값 (예: `1114061500`)을 입력한 뒤 저장합니다. 내용에 줄바꿈이나 공백이 존재해서는 안 됩니다.
 
 ## 라이선스
 
