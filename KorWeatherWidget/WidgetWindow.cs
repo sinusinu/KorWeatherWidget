@@ -16,7 +16,7 @@ using System.Windows.Forms;
 using System.Xml;
 
 namespace WeatherWidget {
-    public partial class frmWidget : Form {
+    public partial class WidgetWindow : Form {
         private readonly IntPtr HWND_BOTTOM = new IntPtr(1);
         private const int SWP_NOSIZE = 0x0001;
         private const int SWP_NOMOVE = 0x0002;
@@ -54,7 +54,7 @@ namespace WeatherWidget {
         private int weatherIcon = 0;
         private bool isLastUpdateSuccessful = false;
 
-        public frmWidget() {
+        public WidgetWindow() {
             InitializeComponent();
         }
 
